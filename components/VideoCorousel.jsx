@@ -196,7 +196,7 @@ const VideoCarousel = () => {
         ))}
       </div>
 
-      <div className="relative flex-center mt-10">
+      <div className="relative   flex-center mt-10">
         <div className="flex-center py-5 px-7 bg-gray-300 backdrop-blur rounded-full">
           {videoRef.current.map((_, i) => (
             <span
@@ -212,7 +212,7 @@ const VideoCarousel = () => {
           ))}
         </div>
 
-        <button className="control-btn  overflow-hidden ">
+        <button className="control-btn  overflow-hidden  border-2 ">
           <Image
             src={isLastVideo ? replayImg : !isPlaying ? playImg : pauseImg}
             alt={isLastVideo ? "replay" : !isPlaying ? "play" : "pause"}
@@ -225,7 +225,7 @@ const VideoCarousel = () => {
             }
             width={20}
             height={20}
-            className="w-auto  p-4 h-auto"
+            className="w-auto  p-[0.8rem] h-auto cursor-pointer "
           />
         </button>
       </div>

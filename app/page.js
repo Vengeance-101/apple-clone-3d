@@ -16,10 +16,7 @@ export default function Home() {
       direction: "vertical",
       gestureDirection: "vertical",
       smooth: true,
-    });
-
-    lenis.on("scroll", (e) => {
-      console.log(e);
+      touch: true,
     });
 
     lenis.on("scroll", ScrollTrigger.update);

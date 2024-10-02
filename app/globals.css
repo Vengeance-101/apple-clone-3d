@@ -143,3 +143,17 @@ html.lenis body {
 .lenis.lenis-smooth iframe {
   pointer-events: none;
 }
+.custom-loader {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #7c7c7c 95%, #0000) 50% 1px/24px
+      24px no-repeat,
+    radial-gradient(farthest-side, #0000 calc(100% - 28px), #f5f5ff 0);
+  animation: s9 2s infinite linear;
+}
+@keyframes s9 {
+  to {
+    transform: rotate(1turn);
+  }
+}
