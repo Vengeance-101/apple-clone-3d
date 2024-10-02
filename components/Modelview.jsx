@@ -22,14 +22,14 @@ const Modelview = ({
     <View
       index={index}
       id={gsapType}
-      className={` w-full h-full ${index === 2 ? "right-[-100%]" : ""}`}
+      className={`w-full h-full absolute ${index === 2 ? "right-[-100%]" : ""}`}
       position={[0, 0, 0]}
     >
       {/* ambient light */}
       <ambientLight intensity={0.5} />
 
       {/* camera */}
-      <PerspectiveCamera makeDefault position={[0, 0, 3]} />
+      <PerspectiveCamera makeDefault position={[0, 0, 3.5]} />
 
       {/* lights */}
       <Lights />
