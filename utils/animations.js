@@ -25,6 +25,8 @@ export const animateWithGsapTimeline = (
 ) => {
   timeline.to(rotationRef.current.rotation, {
     y: rotationState,
+    x: rotationState,
+
     duration: 1,
     ease: "power2.inOut",
   });

@@ -57,7 +57,7 @@ const VideoCarousel = () => {
         onUpdate: () => {
           // get the progress of the video
           const progress = Math.ceil(anim.progress() * 100);
-
+          // console.log(progress);
           if (progress != currentProgress) {
             currentProgress = progress;
 
@@ -65,9 +65,9 @@ const VideoCarousel = () => {
             gsap.to(videoDivRef.current[videoId], {
               width:
                 window.innerWidth < 760
-                  ? "10vw" // mobile
+                  ? "10vw"
                   : window.innerWidth < 1200
-                  ? "10vw" // tablet
+                  ? "10vw"
                   : "4vw", // laptop
             });
 
@@ -153,6 +153,8 @@ const VideoCarousel = () => {
   };
 
   const handleLoadedMetaData = (i, e) => setLoadedData((pre) => [...pre, e]);
+
+  console.log(loadedData);
 
   return (
     <>

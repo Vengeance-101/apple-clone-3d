@@ -30,7 +30,7 @@ const Modelview = ({
       <ambientLight intensity={0.5} />
 
       {/* camera */}
-      <PerspectiveCamera makeDefault position={[0, 0, 4]} />
+      <PerspectiveCamera makeDefault position={[0, 0, 3.5]} />
 
       {/* lights */}
       <Lights />
@@ -60,7 +60,7 @@ const Modelview = ({
           }
         >
           <Iphone
-            scale={index === 1 ? [15, 15, 16] : [17, 17, 17]}
+            scale={index === 1 ? [15, 15, 15] : [17, 17, 17]}
             item={item}
             size={size}
           />
